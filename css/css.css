@@ -1,0 +1,54 @@
+/* https://www.youtube.com/watch?v=Elnsd8TWCrA&list=LL&index=1&t=1447s */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    cursor: pointer;
+    padding: 30px; /* что бы окно не прижималорсь к краям на мобилке*/
+    overflow-y: auto; /* для скрола окна на мобилке*/
+    display: none;
+}
+
+.modal__main{
+    position: relative;
+    max-width: 600px;
+    background-color: rgb(204, 171, 144);
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: default;
+}
+
+.modal__close{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline: 2px solid transparent; /* красота */
+    outline-offset: 3px; /* красота */
+    transition: outline-color .15s ease-in-out; /* красота */
+    border-radius: 3px; /* красота */
+    padding: 0; /* красота */
+    text-align: center; /* красота */
+    display: blox; /* красота */
+    width: 30px; /* красота */
+    height: 30px; /* красота */
+}
+
+.modal__close:focus-visible{
+    outline-color: green; /* красота */
+}
